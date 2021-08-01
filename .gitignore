@@ -105,3 +105,6 @@ dist
 
 # Configuración de Visual Studio Code
 .vscode
+
+# Notas con txt
+*.txt
