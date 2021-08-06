@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Descuentos / inicio</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Porcentajes y descuentos 
+            </h1>
+            <p>Este es el segundo taller del curso parctico de Java Script</p>
+        </header>
+        <section>
+            <h2>Calcula el precio a pagar de tus productos con descuentos</h2>
+
+            <form>
+                <label for="InputPrice">Escribe el precio de tu producto:</label>
+                <input id="InputPrice" type="number" />
+
+                <label for="InputDiscount">Escribe el descuento de tu producto:</label>
+                <input id="InputDiscount" type="number" />
+
+                <label for="Coupons">Cupones</label>
+                <select class="Coupons" name="Coupons" id="Coupons">
+                <option value="0">No tengo</option>
+                <option value="15">15%</option>
+                <option value="25">25%</option>
+                <option value="50">50%</option>
+                </select>
+                <button type="button" onclick="buttonPriceDiscount()">
+                    Calcular el precio con descuento
+                </button>
+
+                <p id="ResultP"></p>
+            </form>
+        </section>
+    <style>
+        /* Flechas de los input */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    </style>
+    <script src="./descuentos.js"></script>
+    </body>
+</html>
