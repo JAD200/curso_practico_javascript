@@ -1,26 +1,24 @@
-function calcularPrecioConDescuento(precio, descuento, cupon){
-    const tipoDeCupones = [15, 25, 50];
+function calcularPrecioConDescuento(precio, cupon){
+    let coupons;
 
     switch (cupon) {
-        case 15:
-            tipoDeCupones[0];
+        case "15":
+            coupons = 15;
             break;
-        case 25:
-            tipoDeCupones[1];
+        case "25":
+            coupons = 25;
             break;
-        case 50:
-            tipoDeCupones[2];
+        case "50":
+            coupons = 50;
             break;
         default:
-            0;
+            coupons = 0;
             break;
     }
-
-    const porcentajePrecioConDescuento = 100 - (descuento + tipoDeCupones);
-    
+    const porcentajePrecioConDescuento = 100 - coupons;
+    console.log(porcentajePrecioConDescuento);
     const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
- 
-    console.log(precioConDescuento)
+    console.log(coupons);
     return precioConDescuento;
 }
 
@@ -28,17 +26,17 @@ function buttonPriceDiscount(){
     // Precio
     const inputPrice = document.getElementById("InputPrice");
     const priceValue = inputPrice.value;
-    // Descuento
+    /* // Descuento
     const inputDiscount = document.getElementById("InputDiscount");
-    const discountValue = inputDiscount.value;
+    const discountValue = inputDiscount.value; */
     // Cupones
-    const inputCoupons = document.getElementById("Coupons");
-    const couponsValue = inputCoupons.value;
+    const inputCoupon = document.getElementById("Coupons");
+    const couponsValue = inputCoupon.value;
     // Argumentos
-    const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue, couponsValue);
+    const precioConDescuento = calcularPrecioConDescuento(priceValue, couponsValue);
     // Resultado Precio
     const resultP = document.getElementById("ResultP");
-    resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
+    resultP.innerText = "El precio total son: $" + precioConDescuento;
 }
 
 /* 
