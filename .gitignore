@@ -108,3 +108,8 @@ dist
 
 # Notas con txt
 *.txt
+
+#Imagenes
+images/
+*.png
+*.jpg
