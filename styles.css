@@ -1,0 +1,78 @@
+.header--logo{
+    width: 10%;
+}
+
+body{
+    background: #64667d;
+    font-family: monospace;
+    margin: 0;        
+}
+header{
+    color: #E6E6E6;
+    font-family: monospace;
+    margin: 5px;
+    font-size: 2vh;
+}
+h2{
+    margin: 5px;
+    border-top: 2px solid #532E1C;
+    font-size: 3vh;
+}
+section{
+    color: #E6E6E6;
+    display: grid;
+    grid-template-rows: initial;
+}
+form{
+    display: grid;
+    grid-auto-flow: row;
+}
+label{
+    font-size: 17px;
+    margin: 5px;
+}
+/* Input */
+input{
+    background-color: #C5A880;
+    padding: 5px;
+    border: #532E1C solid 2px;
+    margin: 3px 5px;
+    text-decoration: none;
+    width: 45vw;
+    outline: none;
+}
+/* Flechas de los input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+.Coupons{
+    background-color: #C5A880;
+    border: #532E1C solid 2px;
+    color: #532E1C;
+    cursor: pointer;
+    margin: 3px 10px;
+    padding: 5px;
+    width: 24vw;
+}
+/* Botones */
+button{
+    background-color: #532E1C;
+    border-radius: 10px;
+    border: none;
+    color: #E6E6E6;
+    cursor: pointer;
+    font-size: 2vh;
+    margin: 5px 10px;
+    width: 30vw;
+}
+/* Respuesta */
+.Answer{
+    text-decoration: underline solid #532E1C 2px;
+    font-size: 19px;
+    margin: 10px 20px;
+}
+.footer--logo{
+    width: 10%;
+}
