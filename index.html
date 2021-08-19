@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Home | Curso Practico de JavaScript</title>
-</head>
-<body>
-    <header>
-        <h1>
-            Talleres del Curso Practico de JavaScript
-        </h1>
-        <img class="header--logo" src="/images/curso practico de JS.png" alt="Logo del curso" />
-        <p>
-            Estos retos fueron desarollados por Juan Di Pasquo
-        </p>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Home | Curso Practico de JavaScript</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Talleres del Curso Practico de JavaScript
+            </h1>
+            <img class="header--logo" src="./images/logo del curso.png" alt="Logo del inicio" />
+            <h2>
+                Estos talleres fueron desarollados por Juan Di Pasquo. 
+            </h2>
+            
+        </header>
     
-    <section>
-        <nav>
-            <ol>
-                <li>
-                    <a href="./workshop1-figuras_geometricas/figuras.html">Taller #1</a>
-                </li>
-                <li>
-                    <a href="./workshop2-precios_y_descuentos/descuentos.html">Taller #2</a>
-                </li>
-                <li>
-                    <a href="./workshop3-promedio_moda_y_mediana/promedio.html">Taller #3a</a>
-                </li>
-                <li>
-                    <a href="./workshop3-promedio_moda_y_mediana/mediana.html">Taller #3b</a>
-                </li>
-                <li>
-                    <a href="./workshop3-promedio_moda_y_mediana/moda.html">Taller #3c</a>
-                </li>
-                <li>
-                    <a href="./workshop4-analisis_serial/salarios.html">Taller #4</a>
-                </li>
-            </ol>
-        </nav>
-    </section>
+        <section>
+            <nav>
+                <ol class="workshop">
+                    <li>
+                        <a href="./workshop1-figuras_geometricas/figuras.html">Figuras</a>
+                    </li>
+                    <li>
+                        <a href="./workshop2-precios_y_descuentos/descuentos.html">Descuentos</a>
+                    </li>
+                    <li class="workshop--n3">Taller #3
+                        <ul class="workshop--n3__list">
+                            <li>
+                                <a href="./workshop3-promedio_moda_y_mediana/promedio.html">Promedio</a>
+                            </li>
+                            <li>
+                                <a href="./workshop3-promedio_moda_y_mediana/mediana.html">Mediana</a>
+                            </li>
+                            <li>
+                                <a href="./workshop3-promedio_moda_y_mediana/moda.html">Moda</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./workshop4-analisis_serial/salarios.html">Salarios</a>
+                    </li>
+                </ol>
+            </nav>
+        </section>
 
-    <footer>
-        
-        <img class="footer--logo" src="/images/curso practico de JS.png" alt="Logo del curso" />
-    </footer>
-</body>
+        <footer>
+            <img class="footer--logo" src="./images/logo del curso.png" alt="Logo final" />
+            <section class="footer--disclaimer">
+                <div class="footer--disclaimer__title">Aclaracion</div>
+                <p>Los talleres han sido creados por Platzi</p>
+            </section>
+            <section class="footer--icons">
+                <p>iconos utilizados:</p>
+                <a href="https://icons8.com/icon/SJOVijEqMUsL/doble-izquierda">Doble izquierda icon by Icons8</a>
+            </section>
+        </footer>
+    </body>
 </html>

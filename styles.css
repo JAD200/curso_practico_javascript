@@ -1,27 +1,57 @@
-.header--logo{
-    width: 10%;
-}
-
 body{
-    background: #64667d;
+    background: #F2F2F2;
     font-family: monospace;
     margin: 0;        
 }
 header{
-    color: #E6E6E6;
+    color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-family: monospace;
     margin: 5px;
     font-size: 2vh;
 }
-h2{
-    margin: 5px;
-    border-top: 2px solid #532E1C;
-    font-size: 3vh;
+h1{
+    margin: 5px 15px;
 }
-section{
-    color: #E6E6E6;
+.header--logo{
+    width: 8vh;
+    margin: 0px 25px;
+}
+h2{
+    margin: 15px;
+    border-top: 2px solid #F29544;
+    font-size: 3vh;
+    /* text-align: justify; */
+}
+nav{
+    color: #0D0D0D;
     display: grid;
     grid-template-rows: initial;
+}
+ol{
+    background-color: #F2B441;
+    padding: 5px;
+    list-style-position: inside;
+    border: #F29544 solid 2px;
+    margin: 3px 20px;
+    width: 30vw;
+}
+.workshop--n3__list{
+    display: none;
+    list-style: none;
+    padding: 1vh 5vw;
+}
+.workshop--n3:hover > .workshop--n3__list{
+    display:block;
+}
+li{
+    padding: 4px 0px;
+}
+a {
+    color: #0D0D0D;
+    text-decoration: none;
 }
 form{
     display: grid;
@@ -33,35 +63,35 @@ label{
 }
 /* Input */
 input{
-    background-color: #C5A880;
+    background-color: #F2B441;
     padding: 5px;
-    border: #532E1C solid 2px;
-    margin: 3px 5px;
+    border: #F29544 solid 2px;
+    margin: 3px 10px;
     text-decoration: none;
-    width: 45vw;
+    width: 43vw;
     outline: none;
 }
-/* Flechas de los input */
+/* Flechas de los input type number*/
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
 }
 .Coupons{
-    background-color: #C5A880;
-    border: #532E1C solid 2px;
-    color: #532E1C;
+    background-color: #F2B441;
+    border: #F29544 solid 2px;
+    color: #0D0D0D;
     cursor: pointer;
     margin: 3px 10px;
-    padding: 5px;
+    padding: 3px;
     width: 24vw;
 }
 /* Botones */
 button{
-    background-color: #532E1C;
+    background-color: #F29544;
     border-radius: 10px;
     border: none;
-    color: #E6E6E6;
+    color: #0D0D0D;
     cursor: pointer;
     font-size: 2vh;
     margin: 5px 10px;
@@ -69,10 +99,29 @@ button{
 }
 /* Respuesta */
 .Answer{
-    text-decoration: underline solid #532E1C 2px;
+    text-decoration: underline solid #F29544 2px;
     font-size: 19px;
     margin: 10px 20px;
 }
+footer{
+    color: #0D0D0D;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+    font-size: 1.6vh;
+}
 .footer--logo{
-    width: 10%;
+    width: 5vh;
+    margin: 0px 25px;
+}
+.footer--disclaimer{
+    margin: 0px 10px;
+}
+.footer--disclaimer__title{
+    font-weight: bold;
+    font-size: 15px
+}
+.footer--icons{
+    margin: 0px 10px;
 }
