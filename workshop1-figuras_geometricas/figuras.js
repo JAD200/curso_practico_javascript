@@ -1,5 +1,4 @@
 // Codigo del cuadrado
-console.group("Cuadrados")
 
 function perimetroCuadrado(lado){
     return lado * 4;
@@ -12,7 +11,6 @@ function areaCuadrado(lado){
 console.groupEnd();
 
 // Codigo del triangulo
-console.group("Triangulos");
 
 function perimetroTriangulo(lado1, lado2, base){
     return lado1 + lado2 + base;
