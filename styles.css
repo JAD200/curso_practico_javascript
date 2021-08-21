@@ -1,7 +1,7 @@
 body{
     background: #F2F2F2;
     font-family: monospace;
-    margin: 0;        
+    margin: 0;     
 }
 header{
     color: #0D0D0D;
@@ -27,8 +27,6 @@ h2{
 }
 nav{
     color: #0D0D0D;
-    display: grid;
-    grid-template-rows: initial;
 }
 ol{
     background-color: #F2B441;
@@ -47,7 +45,7 @@ ol{
     display:block;
 }
 li{
-    padding: 4px 0px;
+    padding: 6px 0px;
 }
 a {
     color: #0D0D0D;
@@ -118,9 +116,13 @@ footer{
 .footer--disclaimer{
     margin: 0px 10px;
 }
+
 .footer--disclaimer__title{
     font-weight: bold;
     font-size: 15px
+}
+#platzi{
+    text-decoration: underline solid #206A5D;
 }
 .footer--icons{
     margin: 0px 10px;
